@@ -1,112 +1,326 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aksara Coffee Roastery</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta name="description" content="Kopi pilihan dari petani Indonesia, disangrai segar dalam batch kecil oleh Aksara Coffee Roastery.">
+  <title>Aksara Coffee Roastery — Cerita baik, diseduh pelan</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header class="site-header">
-    <div class="wrap">
-      <span class="wordmark">Aksara</span>
-      <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#kopi">Kopi Kami</a>
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#" aria-label="Aksara Coffee, beranda">
+        <span class="wordmark-mark" aria-hidden="true">a.</span>
+        <span>aksara<span class="wordmark-sub">coffee roastery</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+        <a href="#cerita">Cerita kami</a>
+        <a href="#kopi">Kopi pilihan</a>
         <a href="#kunjungi">Kunjungi</a>
+        <a class="nav-cta" href="#kopi">Temukan kopimu <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap">
-      <h1>Kopi yang disangrai<br>satu batch pada satu waktu.</h1>
-      <p class="lede">
-        Aksara mengambil biji langsung dari petani di Gayo dan Toraja,
-        lalu menyangrainya dalam batch kecil setiap minggu — biar rasa
-        aslinya sampai ke cangkir lo, bukan rasa yang diseragamkan.
-      </p>
-      <a href="#kopi" class="cta">Lihat pilihan kopi</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Roastery kecil, cerita besar</p>
+          <h1>Yang baik<br>tak perlu <em>terburu.</em></h1>
+          <p class="lede">Kami mengenal petaninya, menjaga setiap prosesnya, lalu menyangrai secukupnya. Supaya cerita dari tanah Indonesia sampai utuh di cangkirmu.</p>
+          <div class="hero-actions">
+            <a href="#kopi" class="button button-light">Jelajahi kopi <span aria-hidden="true">↓</span></a>
+            <span class="hero-note">Disangrai segar setiap minggu<br><strong>Jakarta, Indonesia</strong></span>
+          </div>
+          <div class="hero-index"><span>01</span><span class="index-line"></span><span>Rasa yang punya asal</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi kemasan kopi Aksara Gayo Natural" role="img">
+          <div class="art-sun"></div>
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <span class="art-caption art-caption-top">Dari tanah<br>ke tangan</span>
+          <div class="coffee-bag">
+            <div class="bag-seal"></div>
+            <div class="bag-brand">a.</div>
+            <div class="bag-rule"></div>
+            <span class="bag-origin">GAYO · ACEH</span>
+            <strong>Natural<br>Process</strong>
+            <span class="bag-weight">ARABIKA · 200 G</span>
+            <div class="bag-stamp">BATCH<br><b>014</b></div>
+          </div>
+          <span class="art-caption art-caption-bottom">Panen 2026<br><strong>Altitude 1.450 mdpl</strong></span>
+          <span class="art-spark" aria-hidden="true">✳</span>
+        </div>
+      </div>
+    </section>
 
-  <section id="tentang" class="about">
-    <div class="wrap two-col">
-      <div>
-        <h2>Dimulai dari satu meja kecil</h2>
-        <p>
-          Aksara berdiri tahun 2021 dari dapur rumah dengan satu mesin
-          sangrai kapasitas 1kg. Sekarang kami masih pegang prinsip yang
-          sama: setiap batch dicicip dan dicatat sebelum dikirim, dan
-          setiap petani mitra kami tahu ke mana biji mereka berakhir.
-        </p>
-      </div>
-      <div class="stats">
-        <div>
-          <strong>4</strong>
-          <span>daerah asal biji</span>
-        </div>
-        <div>
-          <strong>1kg</strong>
-          <span>ukuran batch sangrai</span>
-        </div>
-        <div>
-          <strong>2021</strong>
-          <span>mulai beroperasi</span>
-        </div>
+    <div class="ticker" aria-label="Komitmen Aksara">
+      <div class="ticker-track" aria-hidden="true">
+        <span>Langsung dari petani</span><i>✳</i><span>Disangrai dalam batch kecil</span><i>✳</i><span>100% biji Indonesia</span><i>✳</i><span>Langsung dari petani</span><i>✳</i><span>Disangrai dalam batch kecil</span><i>✳</i><span>100% biji Indonesia</span><i>✳</i>
       </div>
     </div>
-  </section>
 
-  <section id="kopi" class="menu">
-    <div class="wrap">
-      <h2>Pilihan minggu ini</h2>
-      <div class="menu-grid">
-        <article>
-          <h3>Gayo Natural</h3>
-          <p class="tasting-note">Body tebal, nuansa cokelat gelap dan sedikit rempah.</p>
-          <span class="price">Rp 95.000 / 200g</span>
-        </article>
-        <article>
-          <h3>Toraja Washed</h3>
-          <p class="tasting-note">Acidity cerah, ada rasa jeruk dan brown sugar.</p>
-          <span class="price">Rp 105.000 / 200g</span>
-        </article>
-        <article>
-          <h3>House Blend</h3>
-          <p class="tasting-note">Seimbang, cocok buat espresso harian.</p>
-          <span class="price">Rp 80.000 / 200g</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="kunjungi" class="visit">
-    <div class="wrap two-col">
-      <div>
-        <h2>Datang cicipin langsung</h2>
-        <p>Jl. Kemang Selatan No. 12, Jakarta Selatan</p>
-        <p>Selasa–Minggu, 08.00–17.00</p>
-      </div>
-      <form class="newsletter" id="newsletter-form">
-        <label for="email">Dapat kabar batch baru tiap minggu</label>
-        <div class="field-row">
-          <input type="email" id="email" placeholder="email kamu" required>
-          <button type="submit">Daftar</button>
+    <section id="cerita" class="story section-pad">
+      <div class="wrap story-grid">
+        <div class="section-marker"><span>01 / CERITA KAMI</span><span class="marker-stem"></span></div>
+        <div class="story-copy">
+          <p class="eyebrow">Dari meja kecil, dengan niat besar</p>
+          <h2>Kopi bukan cuma<br>soal <em>rasa.</em></h2>
+          <p class="body-copy">Aksara lahir dari satu mesin sangrai 1 kg dan rasa ingin tahu yang besar. Sejak 2021, kami bekerja dekat dengan petani Gayo dan Toraja—karena kopi yang baik selalu dimulai jauh sebelum diseduh.</p>
+          <a class="text-link" href="#kunjungi">Kenalan lebih dekat <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="form-msg" id="form-msg"></p>
-      </form>
-    </div>
-  </section>
+        <div class="story-aside">
+          <div class="story-number">05<span> tahun meracik cerita</span></div>
+          <p>Setiap batch dicicip, dicatat, dan disangrai dengan perhatian yang sama seperti cangkir pertama kami.</p>
+          <div class="story-aside-rule"></div>
+          <span class="handwritten">pelan-pelan, tapi sepenuh hati</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="kopi" class="coffee-section section-pad">
+      <div class="wrap">
+        <div class="coffee-heading">
+          <div>
+            <div class="section-marker"><span>02 / PILIHAN ROASTING</span><span class="marker-stem"></span></div>
+            <p class="eyebrow">Batch minggu ini · 21 Oktober 2026</p>
+            <h2>Temukan teman<br><em>seduhmu.</em></h2>
+          </div>
+          <p class="coffee-intro">Masing-masing punya karakter sendiri. Pilih yang paling dekat dengan caramu menikmati kopi.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter kopi berdasarkan metode seduh">
+          <span class="filter-label">Cocok untuk:</span>
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Semua</button>
+          <button class="filter-button" type="button" data-filter="manual" aria-pressed="false">Manual brew</button>
+          <button class="filter-button" type="button" data-filter="espresso" aria-pressed="false">Espresso</button>
+        </div>
+
+        <div class="coffee-grid">
+          <article class="coffee-card" data-methods="manual espresso">
+            <div class="coffee-visual visual-gayo">
+              <span class="coffee-number">01</span><span class="coffee-process">Natural process</span>
+              <div class="bean bean-one" aria-hidden="true"></div><div class="bean bean-two" aria-hidden="true"></div>
+              <span class="visual-origin">ACEH<br><b>GAYO</b></span>
+            </div>
+            <div class="card-content">
+              <div class="card-topline"><span>ACEH · 1.450 MDPL</span><span class="roast-level"><i></i><i></i><i></i></span></div>
+              <h3>Gayo Natural</h3>
+              <p class="flavor-notes">Cokelat hitam <i>·</i> rempah <i>·</i> gula aren</p>
+              <div class="card-bottom"><span class="price">Rp 95.000 <small>/ 200 g</small></span><button class="detail-button" type="button" aria-expanded="false">Catatan rasa <span aria-hidden="true">+</span></button></div>
+              <p class="coffee-detail" hidden>Body tebal dan manis, dengan akhir rasa hangat yang pas untuk V60 maupun espresso susu.</p>
+            </div>
+          </article>
+
+          <article class="coffee-card" data-methods="manual">
+            <div class="coffee-visual visual-toraja">
+              <span class="coffee-number">02</span><span class="coffee-process">Washed process</span>
+              <div class="bean bean-one" aria-hidden="true"></div><div class="bean bean-two" aria-hidden="true"></div>
+              <span class="visual-origin">SULAWESI<br><b>TORAJA</b></span>
+            </div>
+            <div class="card-content">
+              <div class="card-topline"><span>SULAWESI · 1.600 MDPL</span><span class="roast-level"><i></i><i></i><i></i></span></div>
+              <h3>Toraja Washed</h3>
+              <p class="flavor-notes">Jeruk <i>·</i> brown sugar <i>·</i> teh hitam</p>
+              <div class="card-bottom"><span class="price">Rp 105.000 <small>/ 200 g</small></span><button class="detail-button" type="button" aria-expanded="false">Catatan rasa <span aria-hidden="true">+</span></button></div>
+              <p class="coffee-detail" hidden>Rasa bersih dengan acidity cerah. Nikmati sebagai pour-over untuk menangkap lapisan rasa buahnya.</p>
+            </div>
+          </article>
+
+          <article class="coffee-card" data-methods="espresso">
+            <div class="coffee-visual visual-blend">
+              <span class="coffee-number">03</span><span class="coffee-process">House blend</span>
+              <div class="bean bean-one" aria-hidden="true"></div><div class="bean bean-two" aria-hidden="true"></div>
+              <span class="visual-origin">AKSARA<br><b>BLEND 01</b></span>
+            </div>
+            <div class="card-content">
+              <div class="card-topline"><span>GAYO × TORAJA</span><span class="roast-level roast-light"><i></i><i></i><i></i></span></div>
+              <h3>House Blend</h3>
+              <p class="flavor-notes">Karamel <i>·</i> kakao <i>·</i> kacang</p>
+              <div class="card-bottom"><span class="price">Rp 80.000 <small>/ 200 g</small></span><button class="detail-button" type="button" aria-expanded="false">Catatan rasa <span aria-hidden="true">+</span></button></div>
+              <p class="coffee-detail" hidden>Blend seimbang dengan crema lembut dan rasa manis yang konsisten, diracik khusus untuk espresso harian.</p>
+            </div>
+          </article>
+        </div>
+        <p class="filter-empty" hidden>Belum ada kopi untuk pilihan ini. Coba metode seduh yang lain, ya.</p>
+      </div>
+    </section>
+
+    <section id="kunjungi" class="visit section-pad">
+      <div class="wrap visit-grid">
+        <div class="visit-copy">
+          <div class="section-marker"><span>03 / MAMPIR, YUK</span><span class="marker-stem"></span></div>
+          <p class="eyebrow">Selalu ada cangkir untukmu</p>
+          <h2>Ngobrol sambil<br><em>ngopi.</em></h2>
+          <p class="body-copy">Mampir untuk mencicip batch terbaru, ngobrol soal proses, atau sekadar menikmati sore yang tidak terburu-buru.</p>
+          <div class="visit-details">
+            <div><span>ALAMAT</span><p>Jl. Kemang Selatan No. 12<br>Jakarta Selatan</p></div>
+            <div><span>JAM BUKA</span><p>Selasa–Minggu<br>08.00–17.00 WIB</p></div>
+          </div>
+          <a class="button button-dark" href="https://maps.google.com/?q=Jl.+Kemang+Selatan+No.+12+Jakarta+Selatan" target="_blank" rel="noreferrer">Lihat di peta <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="visit-card">
+          <span class="visit-card-label">AKSARA COFFEE ROASTERY</span>
+          <div class="visit-sun"></div>
+          <span class="visit-script">sampai<br>bertemu di<br>meja kopi.</span>
+          <span class="visit-card-coordinates">6°16' S &nbsp; 106°49' E</span>
+          <span class="visit-flower" aria-hidden="true">✳</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="wrap newsletter-inner">
+        <div><p class="eyebrow">Surat kecil dari roastery</p><h2>Batch baru, cerita baru.</h2><p class="newsletter-copy">Kabar kopi musiman dan cerita dari kebun. Paling banyak satu email seminggu.</p></div>
+        <form class="newsletter" id="newsletter-form">
+          <label for="email">Alamat email</label>
+          <div class="field-row">
+            <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+            <button type="submit">Ikut cerita <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="form-msg" id="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <span>Aksara Coffee Roastery</span>
-      <span>&copy; 2026</span>
+    <div class="wrap footer-inner">
+      <a class="wordmark footer-wordmark" href="#"><span class="wordmark-mark" aria-hidden="true">a.</span><span>aksara<span class="wordmark-sub">coffee roastery</span></span></a>
+      <p>Disangrai dengan hati di Jakarta, Indonesia.</p>
+      <span class="copyright">© Aksara Coffee 2026</span>
     </div>
   </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="script.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('newsletter-form');
+      const emailInput = document.getElementById('email');
+      const msg = document.getElementById('form-msg');
+      const toast = document.getElementById('toast');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.getElementById('site-nav');
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const cards = document.querySelectorAll('.coffee-card');
+      const emptyState = document.querySelector('.filter-empty');
+      const detailButtons = document.querySelectorAll('.detail-button');
+
+      const showToast = (message) => {
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        window.clearTimeout(showToast.timeoutId);
+        showToast.timeoutId = window.setTimeout(() => {
+          toast.classList.remove('is-visible');
+        }, 2200);
+      };
+
+      if (form && emailInput && msg) {
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+
+          const email = emailInput.value.trim();
+          if (!email) {
+            msg.textContent = 'Isi email dulu ya supaya kita bisa kirim batch baru.';
+            msg.style.color = '#8a3d32';
+            emailInput.focus();
+            return;
+          }
+
+          const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+          if (!isValid) {
+            msg.textContent = 'Format email-nya belum benar, cek lagi ya.';
+            msg.style.color = '#8a3d32';
+            emailInput.focus();
+            return;
+          }
+
+          msg.textContent = 'Terima kasih! Kabar batch baru bakal masuk ke ' + email + '.';
+          msg.style.color = '#45533a';
+          form.reset();
+          showToast('Email tersimpan');
+        });
+      }
+
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = nav.classList.toggle('is-open');
+          menuToggle.setAttribute('aria-expanded', String(isOpen));
+          menuToggle.querySelectorAll('span').forEach((line, index) => {
+            if (isOpen) {
+              line.style.transform = index === 0 ? 'translateY(8px) rotate(45deg)' : index === 1 ? 'scaleX(0)' : 'translateY(-8px) rotate(-45deg)';
+            } else {
+              line.style.transform = 'none';
+            }
+          });
+        });
+
+        nav.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('is-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.querySelectorAll('span').forEach((line) => {
+              line.style.transform = 'none';
+            });
+          });
+        });
+      }
+
+      const updateFilter = (selectedFilter) => {
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const methods = card.dataset.methods || '';
+          const shouldShow = selectedFilter === 'all' || methods.includes(selectedFilter);
+
+          card.classList.toggle('is-hidden', !shouldShow);
+          if (shouldShow) visibleCount += 1;
+        });
+
+        if (emptyState) {
+          emptyState.hidden = visibleCount !== 0;
+        }
+      };
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const filter = button.dataset.filter;
+
+          filterButtons.forEach((item) => {
+            const isActive = item === button;
+            item.classList.toggle('is-active', isActive);
+            item.setAttribute('aria-pressed', String(isActive));
+          });
+
+          updateFilter(filter);
+        });
+      });
+
+      if (cards.length) {
+        updateFilter('all');
+      }
+
+      detailButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const card = button.closest('.coffee-card');
+          const detail = card ? card.querySelector('.coffee-detail') : null;
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+          button.setAttribute('aria-expanded', String(!isExpanded));
+          button.innerHTML = isExpanded ? 'Catatan rasa <span aria-hidden="true">+</span>' : 'Tutup <span aria-hidden="true">−</span>';
+
+          if (detail) {
+            detail.hidden = isExpanded;
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

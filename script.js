@@ -27,7 +27,7 @@ if (form && emailInput && msg) {
 
     const email = emailInput.value.trim();
     if (!email) {
-      msg.textContent = 'Isi email dulu ya supaya kita bisa kirim batch baru.';
+      msg.textContent = 'Please enter your email so we can send you updates about our next batch.';
       msg.style.color = '#8a3d32';
       emailInput.focus();
       return;
@@ -35,16 +35,16 @@ if (form && emailInput && msg) {
 
     const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if (!isValid) {
-      msg.textContent = 'Format email-nya belum benar, cek lagi ya.';
+      msg.textContent = 'That email address doesn’t look right. Please check it and try again.';
       msg.style.color = '#8a3d32';
       emailInput.focus();
       return;
     }
 
-    msg.textContent = 'Terima kasih! Kabar batch baru bakal masuk ke ' + email + '.';
+    msg.textContent = 'Thank you! Updates about our next batch will be sent to ' + email + '.';
     msg.style.color = '#45533a';
     form.reset();
-    showToast('Email tersimpan');
+    showToast('Email saved');
   });
 }
 
@@ -111,7 +111,7 @@ detailButtons.forEach((button) => {
     const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
     button.setAttribute('aria-expanded', String(!isExpanded));
-    button.innerHTML = isExpanded ? 'Catatan rasa <span aria-hidden="true">+</span>' : 'Tutup <span aria-hidden="true">−</span>';
+    button.innerHTML = isExpanded ? 'Tasting notes <span aria-hidden="true">+</span>' : 'Close <span aria-hidden="true">−</span>';
 
     if (detail) {
       detail.hidden = isExpanded;
